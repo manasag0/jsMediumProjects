@@ -23,7 +23,10 @@ function addTodo(todo){
     }
     if(todoText){
         const todoEl = document.createElement('li');
-        todoEl.classList.add('completed');
+        if(todo.completed){
+            todoEl.classList.add('completed');
+        }
+        
 
         todoEl.addEventListener('click',()=>{
             todoEl.classList.toggle("completed");
