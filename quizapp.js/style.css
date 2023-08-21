@@ -17,6 +17,7 @@ body{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     width: 400px;
     max-width: 100%;
+    overflow: hidden;
 }
 .quiz-header{
     padding: 2rem;
@@ -34,15 +35,18 @@ button{
     border: none;
     font-size: 1.2rem;
     width: 100%;
-    border-radius: 5px;
-    padding: 10px;
-    
+    padding: 10px;   
 }
 button:hover{
     background-color: #8e44ad;
 }
+h2{
+    margin: 0;
+}
 ul li {
-    margin: 1 rem 0;
-    font-size: 1.1rem;
-
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+ul li label{
+    cursor: pointer;
 }
